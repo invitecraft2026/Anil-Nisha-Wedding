@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Calendar, Clock, MapPin } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
-import coupleEvents from "@/assets/image3.jpeg";
+import coupleEvents from "@/assets/image5.jpeg";
 
 const events = [
   {
@@ -31,6 +31,9 @@ export function Events() {
           alt=""
           aria-hidden="true"
           className="h-full w-full object-cover opacity-[0.32]"
+          style={{
+            objectPosition:"60%"
+          }}
         />
 
         <div
