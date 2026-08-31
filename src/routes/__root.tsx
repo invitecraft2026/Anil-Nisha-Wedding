@@ -34,6 +34,7 @@ function NotFoundComponent() {
 function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
+
   useEffect(() => {
     reportLovableError(error, { boundary: "tanstack_root_error_component" });
   }, [error]);
@@ -63,22 +64,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
 
-      { title: "Virat Kohli & Anushka Sharma · A Wedding Invitation" },
+      { title: "Nisha & Anil · A Wedding Invitation" },
       {
         name: "description",
         content:
-          "Together with their families, Kowshik Raj & Niroopa Vijayakumar invite you to celebrate their  wedding on 6–7 September in Trichy.",
+          "Nisha & Anil invite you to celebrate their reception on 12 September and wedding on 13 September 2026 at Shri Manjunatha Swamy Kalyana Mantapa, Katamnallur.",
       },
 
       // Open Graph
       {
         property: "og:title",
-        content: "Virat Kohli & Anushka Sharma · A Wedding Invitation",
+        content: "Nisha & Anil · A Wedding Invitation",
       },
       {
         property: "og:description",
         content:
-          "Celebrate our Wedding — 6–7 September at Crystal Convention Centre, Trichy.",
+          "Celebrate Nisha & Anil's Reception on 12 September and Wedding on 13 September 2026 at Shri Manjunatha Swamy Kalyana Mantapa, Katamnallur.",
       },
       {
         property: "og:image",
@@ -108,11 +109,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       {
         name: "twitter:title",
-        content: "Virat Kohli & Anushka Sharma · A Wedding Invitation",
+        content: "Nisha & Anil · A Wedding Invitation",
       },
       {
         name: "twitter:description",
-        content: "Celebrate our Wedding — 6–7 September in Trichy.",
+        content:
+          "Celebrate our Reception on 12 September and Wedding on 13 September 2026 in Katamnallur.",
       },
       {
         name: "twitter:image",
@@ -162,6 +164,7 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+
   return (
     <QueryClientProvider client={queryClient}>
       <Outlet />

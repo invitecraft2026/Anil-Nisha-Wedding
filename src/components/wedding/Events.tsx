@@ -1,15 +1,22 @@
 import { motion } from "framer-motion";
 import { Calendar, Clock, MapPin } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
-import coupleEvents from "@/assets/image2.png";
+import coupleEvents from "@/assets/image3.jpeg";
 
 const events = [
   {
+    tag: "Reception",
+    title: "Reception",
+    date: "Saturday · 12 September 2026",
+    time: "7:00 PM",
+    location: "Shri Manjunatha Swamy Kalyana Mantapa, Katamnallur",
+  },
+  {
     tag: "Wedding Ceremony",
     title: "Marriage",
-    date: "Monday · 7 September 2026",
-    time: "Mugurtham · 9:00 – 10:30 AM",
-    location: "Crystal Convention Centre, Trichy",
+    date: "Sunday · 13 September 2026",
+    time: "Mugurtham · 9:00 AM",
+    location: "Shri Manjunatha Swamy Kalyana Mantapa, Katamnallur",
   },
 ];
 

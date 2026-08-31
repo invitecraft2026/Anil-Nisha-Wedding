@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import { MapPin, Navigation } from "lucide-react";
 import venue from "@/assets/venue.jpg";
-import coupleSecondary from "@/assets/image3.jpeg";
+import coupleSecondary from "@/assets/image4.jpeg";
 import { SectionHeading } from "./SectionHeading";
 
 const VENUE_QUERY = encodeURIComponent(
-  "Crystal Convention Centre, SF No 108/2 and 108/3, Madurai Road, Kallikudi Village, South, Manikandam, Trichy - 620012",
+  "Shri Manjunatha Swamy Kalyana Mantapa, Katamnallur",
 );
 
 export function Venue() {
@@ -42,7 +42,7 @@ export function Venue() {
           <div className="relative min-h-[380px] overflow-hidden">
             <img
               src={venue}
-              alt="Crystal Convention Centre"
+              alt="Shri Manjunatha Swamy Kalyana Mantapa"
               className="h-full w-full object-cover"
               loading="lazy"
             />
@@ -70,13 +70,16 @@ export function Venue() {
             <p className="font-display text-[10px] tracking-[0.5em] text-rose-gold uppercase">
               Reception & Ceremony
             </p>
+
             <h3 className="font-serif text-4xl leading-tight text-deep-brown md:text-5xl">
-              Crystal <span className="italic text-gradient-gold">Convention Centre</span>
+              Shri Manjunatha Swamy{" "}
+              <span className="italic text-gradient-gold">Kalyana Mantapa</span>
             </h3>
+
             <p className="text-deep-brown/75 leading-relaxed">
-              SF No 108/2 and 108/3, Madurai Road, Kallikudi Village, South, Manikandam, Trichy –
-              620012.
+              Katamnallur
             </p>
+
             <div className="flex flex-wrap items-center gap-3 pt-2">
               <a
                 href={`https://www.google.com/maps/search/?api=1&query=${VENUE_QUERY}`}
@@ -89,6 +92,7 @@ export function Venue() {
               >
                 <Navigation className="h-4 w-4" /> Get Directions
               </a>
+
               <a
                 href={`https://www.google.com/maps/search/?api=1&query=${VENUE_QUERY}`}
                 target="_blank"
