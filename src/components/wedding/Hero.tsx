@@ -99,7 +99,7 @@ export function Hero() {
           }}
           className="mt-6 font-script text-[clamp(3rem,9vw,6.5rem)] leading-[0.9] text-[#454637]"
         >
-          Anil
+          Nisha
         </motion.h1>
 
         {/* <motion.p
@@ -146,7 +146,7 @@ export function Hero() {
           }}
           className="font-script text-[clamp(3rem,9vw,6.5rem)] leading-[0.9] text-[#454637]"
         >
-          Nisha
+          Anil
         </motion.h1>
 
         {/* <motion.p

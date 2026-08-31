@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { MapPin, Navigation } from "lucide-react";
 import venue from "@/assets/venue.jpg";
-import coupleSecondary from "@/assets/image4.jpeg";
+import coupleSecondary from "@/assets/image1.jpeg";
 import { SectionHeading } from "./SectionHeading";
 
 const VENUE_QUERY = encodeURIComponent(
@@ -19,6 +19,9 @@ export function Venue() {
           alt=""
           aria-hidden="true"
           className="h-full w-full object-cover opacity-[0.32]"
+          style={{
+            objectPosition:"36%"
+          }}
         />
 
         <div

@@ -7,18 +7,46 @@ import g4 from "@/assets/image4.jpeg";
 import g5 from "@/assets/image5.jpeg";
 
 const images = [
-  { src: g1, caption: "Jasmine & marigold", span: "row-span-2" },
-  { src: g2, caption: "Sacred deepam", span: "" },
-  { src: g3, caption: "Silk in blush", span: "row-span-2" },
-  { src: g4, caption: "Bound together", span: "" },
-  { src: g5, caption: "The venue awaits", span: "col-span-2" },
-  // { src: g6, caption: "Blessings in gold", span: "" },
+  {
+    src: g1,
+    caption: "Jasmine & marigold",
+    span: "row-span-2",
+    position: "36% center",
+  },
+  {
+    src: g2,
+    caption: "Sacred deepam",
+    span: "",
+    position: "center center",
+  },
+  {
+    src: g3,
+    caption: "Silk in blush",
+    span: "row-span-2",
+    position: "center center",
+  },
+  {
+    src: g4,
+    caption: "Bound together",
+    span: "",
+    position: "center center",
+  },
+  {
+    src: g5,
+    caption: "The venue awaits",
+    span: "col-span-2",
+    position: "center top",
+  },
 ];
 
 export function Gallery() {
   return (
     <section className="relative py-32 px-6">
-      <SectionHeading eyebrow="Frames of Us" title="A" italic="Prelude" />
+      <SectionHeading
+        eyebrow="Frames of Us"
+        title="A"
+        italic="Prelude"
+      />
 
       <div className="mx-auto mt-20 grid max-w-6xl auto-rows-[220px] grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
         {images.map((im, i) => (
@@ -52,9 +80,10 @@ export function Gallery() {
               src={im.src}
               alt={im.caption}
               loading="lazy"
-              className={`h-full w-full object-cover transition-transform duration-[1600ms] ease-out group-hover:scale-110 ${
-                i === 4 ? "object-top" : "object-center"
-              }`}
+              className="h-full w-full object-cover transition-transform duration-[1600ms] ease-out group-hover:scale-110"
+              style={{
+                objectPosition: im.position,
+              }}
             />
 
             <div

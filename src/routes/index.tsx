@@ -60,7 +60,7 @@ function Invitation() {
             <ThankYou />
 
             <footer className="border-t border-rose-gold/20 py-10 text-center text-[10px] tracking-[0.4em] text-deep-brown/50 uppercase">
-              Made with love · K &amp; N · 2026
+              Made with love · N &amp; A · 2026
             </footer>
           </motion.main>
         )}
